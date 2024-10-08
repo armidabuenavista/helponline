@@ -1,0 +1,315 @@
+/* ================================================================ 
+This copyright notice must be kept untouched in the stylesheet at 
+all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.stunicholls.com/menu/pro_drop_1.html
+Copyright (c) 2005-2007 Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+
+
+/* CSS Document */
+
+body {
+	font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+}
+A:link {
+	font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	text-decoration: none;
+	style: normal;
+	color: #000;
+}
+A:visited {
+	font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	text-decoration: underline;
+	style: normal;
+	color: #000;
+}
+A:active {
+	font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	font-size: 16px;
+	style: normal;
+	color: #000;
+}
+label {
+	cursor: pointer;
+}
+table {
+	border: 1px solid #9c9e9a;
+	border-collapse: collapse;
+	width: 100%;
+	font-size: 16px;
+	font-family: Ubuntu, sans serif;
+}
+.main_calendar th {
+	background-color: #43ef4b;
+	text-align: center;
+	color: #000000;
+	font-size: 12px;
+}
+.main_calendar td {
+	text-align: left;
+	padding: 5px;
+	font-size: 12px;
+	border: 1px dashed;
+}
+.ncs_events_td {
+	width: 120px;
+	height: 100px;
+}
+.ncs_events_th {
+	height: 50px;
+}
+.tip {
+	display: inline;
+	position: relative;
+}
+.tip:hover:after {
+	background: #333;
+	background: rgba(0, 0, 0, .8);
+	border-radius: 5px;
+	bottom: 26px;
+	color: #fff;
+	content: attr(title);
+	left: 20%;
+	padding: 5px 15px;
+	position: absolute;
+	z-index: 98;
+	width: 180px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+}
+.tip:hover:before {
+	border: solid;
+	border-color: #333 transparent;
+	border-width: 6px 6px 0 6px;
+	bottom: 20px;
+	content: "";
+	left: 50%;
+	position: absolute;
+	z-index: 99;
+}
+.ui-dialog .ui-dialog-content {
+	font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	position: relative;
+	border: 0;
+	padding: .5em 1em;
+	background: none;
+	overflow: auto;
+	zoom: 1;
+	background-color: #ffffff;
+	border: solid 5px #f0eeee;
+}
+.lead {
+	line-height: 20px;
+}
+.carousel-caption {
+	color: #0a40fc;
+	text-shadow: 1px 1px 5px #FFFFFF, 0 0 30px #FFFFFF, 0 0 5px #FFFFFF;
+	/*position: relative;
+    left: auto;
+    right: auto;*/
+}
+.checkbox {
+	width: 20px;
+	height: 20px;
+}
+.ui-datepicker {
+	z-index: 9999 !important;
+}
+p {
+	font-size: 18px;
+	text-align: justify;
+}
+.colorgraph {
+	height: 5px;
+	border-top: 0;
+	background: #c4e17f;
+	border-radius: 5px;
+	background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+	background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+	background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+	background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+}
+.schedule {
+	font-size: 14px;
+}
+:focus {
+	outline: none !important;
+}
+.error {
+	border: 1px solid #ff0000;
+}
+#ui-datepicker-div {
+	display: none;
+}
+.table-responsive {
+	border: 0px solid #dddddd;
+}
+.ui-dialog .ui-dialog-title {
+	font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#evencal {
+	width: 900px;
+	margin: 0 auto;
+}
+#evencal div.calendar {
+	float: left;
+	width: 400px;
+}
+#evencal div.event_detail {
+	float: left;
+	width: 500px;
+}
+select {
+	min-width: 50px;
+}
+table.date {
+	border: 1px solid #999;
+	border-collapse: collapse;
+	font-family: Georgia, Times, serif;
+}
+.date th {
+	border: 1px solid #000;
+	text-transform: uppercase;
+	background-color: #9E3DFF;
+	font-size: 80%;
+	color: #F2FFFF;
+	height: 2.5em;
+}
+.date td {
+	border: 1px solid #999;
+	height: 3em;
+	width: 3em;
+	vertical-align: top;
+}
+caption {
+	font-size: 200%;
+	font-style: italic;
+	margin-bottom: 5px;
+}
+a {
+	text-decoration: none;
+}
+a.prev_date, a.next_date {
+	font-size: 50%;
+}
+div.active_date_event, div.date_event, div.active_no_event, div.no_event {
+	width: inherit;
+	height: inherit;
+	cursor: pointer;
+}
+div.active_date_event:hover, div.date_event:hover, div.active_no_event:hover, div.no_event:hover {
+	background-color: #D8ADFF;
+}
+div.active_date_event {
+	background-color: #FF7575;
+}
+div.active_no_event {
+	background-color: #80FFBF;
+}
+span.date {
+	font-family: 'Times New Roman';
+	font-size: 13px;
+	font-weight: bold;
+	margin-left: 3px;
+	height: 1em;
+	display: block;
+}
+span.event {
+	font-family: Arial;
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 5px;
+	display: block;
+	color: blue;
+}
+.weekend_sat {
+	background-color: #F3F3F3;
+}
+.weekend_sun {
+	background-color: #FFE5E5;
+}
+.require {
+	color: red;
+}
+.error_require {
+	background-color: #ffd2d4;
+}
+.spacer {
+	clear: both;
+	color: red;
+	text-align: center;
+	font-size: 12px;
+	padding: 3px;
+}
+.add_event {
+	font-family: Arial, Helvetica, sans-serif;
+	cursor: pointer;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 3px 8px 3px 25px;
+	background: #01b9ec url('images/add.png') no-repeat 5px center;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	border: 1px solid #01b9ec;
+	-moz-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px rgba(255, 255, 255, 1);
+	-webkit-box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px rgba(255, 255, 255, 1);
+	box-shadow: 0px 1px 3px rgba(000, 000, 000, 0.5), inset 0px 0px 2px rgba(255, 255, 255, 1);
+	text-shadow: 0px -1px 0px rgba(000, 000, 000, 0.4), 0px 1px 0px rgba(255, 255, 255, 0.3);
+	margin: 10px 0 0 22px;
+}
+
+/* from : http://www.paulund.co.uk/ */
+
+.info1, .info2, .message {
+	margin: 5px 20px 5px 20px;
+	padding: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-moz-box-shadow: 4px 4px #dfe1d8;
+	-webkit-box-shadow: 4px 4px #dfe1d8;
+	box-shadow: 4px 4px #dfe1d8;
+}
+h4 {
+	margin: 5px 5px 5px 50px;
+	padding: 0;
+	font-size: 16px;
+}
+h4 img.edit, h4 img.delete {
+	float: right;
+	padding: 2px 5px 0 5px;
+	cursor: pointer;
+}
+p {
+	font-size: 12px;
+	color: #000;
+	margin: 5px 5px 5px 50px;
+}
+.info1 {
+	border: 1px solid #9d9c49;
+	color: #9d9c49;
+	background: #fdfdcb url('images/warning.png') no-repeat;
+	background-position: 10px center;
+}
+.info2 {
+	border: 1px solid #0e7fad;
+	color: #0e7fad;
+	background: #c0e9fa url('images/info.png') no-repeat;
+	background-position: 10px center;
+}
+.message {
+	border: 1px solid #000;
+	color: #000;
+	background: #efefef url('images/message.png') no-repeat;
+	background-position: 10px center;
+}

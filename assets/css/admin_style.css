@@ -1,0 +1,480 @@
+/* ================================================================ 
+This copyright notice must be kept untouched in the stylesheet at 
+all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.stunicholls.com/menu/pro_drop_1.html
+Copyright (c) 2005-2007 Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+
+
+/* CSS Document */
+
+body {
+	background-color: #FFFFFF;
+}
+
+/*A:link
+{
+	font-family:Ubuntu, sans serif;
+	font-size:18px;
+	text-decoration:none;
+	font-style:normal;
+ 	color: #000000;
+}
+
+A:visited 	
+{
+  	font-family:Ubuntu, sans serif;
+	font-size:18px;
+	text-decoration:underline;
+	font-style: normal;
+ 	color: #000000;
+}
+
+A:active    
+{
+	text-decoration:none;
+  	font-family:Ubuntu, sans serif;
+	font-size:18px;
+	font-style:normal;
+ 	color: #000000;
+}*/
+
+.nav-tabs li a {
+	font-size: 14px;
+}
+.img:hover {
+	opacity: 0.5;
+	filter: alpha(opacity=30);
+}
+.img img:hover {
+	-webkit-transform: scale(1.25);
+	/* Safari and Chrome */
+	-moz-transform: scale(1.25);
+	/* Firefox */
+	-ms-transform: scale(1.25);
+	/* IE 9 */
+	-o-transform: scale(1.25);
+	/* Opera */
+	transform: scale(1.25);
+}
+.navbar-default .navbar-toggle {
+	border-color: #e7e7e7;
+}
+.nav-tabs>li.active>a {
+	/* background-color:#43c72c;
+  border-bottom: 1px solid #EEE;
+  color:#ffffff;*/
+	font-weight: bold;
+}
+label {
+	cursor: pointer;
+}
+.main_calendar th {
+	background-color: #43ef4b;
+	text-align: center;
+	color: #000000;
+}
+.main_calendar td {
+	text-align: left;
+	padding: 5px;
+}
+.ncs_events_td {
+	width: 120px;
+	height: 100px;
+}
+.ncs_events_th {
+	height: 50px;
+}
+#requests th {
+	height: 25px;
+	text-align: center;
+}
+.tip {
+	display: inline;
+	position: relative;
+}
+.tip:hover:after {
+	background: #333;
+	background: rgba(0, 0, 0, .8);
+	border-radius: 5px;
+	bottom: 26px;
+	color: #fff;
+	content: attr(title);
+	left: 20%;
+	padding: 5px 15px;
+	position: absolute;
+	z-index: 98;
+	width: 180px;
+	font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 10px;
+}
+.tip:hover:before {
+	border: solid;
+	border-color: #333 transparent;
+	border-width: 6px 6px 0 6px;
+	bottom: 20px;
+	content: "";
+	left: 50%;
+	position: absolute;
+	z-index: 99;
+}
+.border-textbox {
+	border: 0px;
+}
+.ui-dialog .ui-dialog-content {
+	font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	position: relative;
+	border: 0;
+	padding: .5em 1em;
+	background: none;
+	overflow: auto;
+	zoom: 1;
+	background-color: #ffffff;
+	border: solid 0px #f0eeee;
+}
+.carbo {
+	background-color: #33CC33;
+	text-align: center;
+}
+.pro {
+	background-color: #eeac4a;
+	text-align: center;
+}
+.fat {
+	background-color: #faf48b;
+	text-align: center;
+}
+.calorie {
+	background-color: #ffffff;
+	text-align: center;
+}
+.meal_style {
+	background-color: #a2c1e6;
+	text-align: center;
+}
+.fel_table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.fel_table th {
+	background-color: #abc9e7;
+	height: 40px;
+	font-size: 16px;
+	text-align: center;
+	padding: 0px 30px 0px 30px;
+}
+.fel_table td {
+	padding: 5px 0px 5px 10px;
+	font-size: 16px;
+}
+
+/*  Define the background color for all the ODD background rows  */
+
+.fel_table tr:nth-child(odd) {
+	background: #CFE0F1;
+}
+
+/*  Define the background color for all the EVEN background rows  */
+
+.fel_table tr:nth-child(even) {
+	background: #e7eff8;
+}
+.fel_data_table th {
+	background-color: #abc9e7;
+	height: 40px;
+	font-size: 16px;
+	text-align: center;
+	padding: 0px 10px 0px 10px;
+}
+.fel_data_table td {
+	padding: 5px 0px 5px 10px;
+	font-size: 16px;
+}
+.fel_style1 {
+	font-size: 14px;
+	font-weight: bold;
+	text-indent: 3px;
+}
+.fel_style2 {
+	font-size: 14px;
+	font-style: italic;
+	text-indent: 8px;
+}
+.show {
+	width: 100%;
+	height: 150px;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	border-bottom: 1px #999 dotted;
+	font-size: 18px;
+	line-height: 24px;
+}
+.action {
+	float: right;
+}
+#eventdate {
+	font-size: 9px;
+	font-weight: bold;
+}
+#menu {
+	overflow-y: auto;
+	max-width: 100%;
+	max-height: 40%;
+	height: 500px;
+}
+.table tbody tr:hover td, .table tbody tr:hover th {
+	background-color: #f7f9ac;
+}
+.table-condensed>thead>tr>th, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>tbody>tr>td, .table-condensed>tfoot>tr>td {
+	padding: 10px;
+	border: 1px solid #efefed;
+}
+.lead {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+input[type=range] {
+	-webkit-appearance: none;
+	margin: 18px 0;
+	width: 100%;
+}
+input[type=range]:focus {
+	outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+	width: 100%;
+	height: 8.4px;
+	cursor: pointer;
+	animate: 0.2s;
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+	background: #3071a9;
+	border-radius: 1.3px;
+	border: 0.2px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+	border: 1px solid #000000;
+	height: 36px;
+	width: 16px;
+	border-radius: 3px;
+	background: #ffffff;
+	cursor: pointer;
+	-webkit-appearance: none;
+	margin-top: -14px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+	background: #367ebd;
+}
+input[type=range]::-moz-range-track {
+	width: 100%;
+	height: 8.4px;
+	cursor: pointer;
+	animate: 0.2s;
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+	background: #3071a9;
+	border-radius: 1.3px;
+	border: 0.2px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+	border: 1px solid #000000;
+	height: 36px;
+	width: 16px;
+	border-radius: 3px;
+	background: #ffffff;
+	cursor: pointer;
+}
+input[type=range]::-ms-track {
+	width: 100%;
+	height: 8.4px;
+	cursor: pointer;
+	animate: 0.2s;
+	background: transparent;
+	border-color: transparent;
+	border-width: 16px 0;
+	color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+	background: #2a6495;
+	border: 0.2px solid #010101;
+	border-radius: 2.6px;
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+	background: #3071a9;
+	border: 0.2px solid #010101;
+	border-radius: 2.6px;
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+	border: 1px solid #000000;
+	height: 36px;
+	width: 16px;
+	border-radius: 3px;
+	background: #ffffff;
+	cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+	background: #3071a9;
+}
+input[type=range]:focus::-ms-fill-upper {
+	background: #367ebd;
+}
+#ui-datepicker-div {
+	display: none;
+}
+.img-thumbnail {
+	border-radius: 10px;
+	padding: 10px;
+	width: 100%;
+	font-size: 18px;
+}
+sub {
+	font-size: 10px;
+}
+#accordion .ui-accordion-content {
+	font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	width: 100%;
+	font-size: 12px;
+	color: #000000;
+	height: 100%;
+}
+#accordion .ui-accordion-header {
+	font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #000;
+	line-height: 20px;
+	display: block;
+	font-size: 14pt;
+	width: 100%;
+	text-indent: 10px;
+	text-align: left;
+	font-family: Ubuntu, sans serif;
+}
+.checkbox {
+	width: 20px;
+	height: 20px;
+}
+.ui-datepicker {
+	z-index: 9999 !important;
+}
+.schedule {
+	font-size: 14px;
+}
+:focus {
+	outline: none !important;
+}
+sub {
+	font-size: 14px;
+}
+.error {
+	border: 1px solid #ff0000;
+}
+.colorgraph {
+	height: 5px;
+	border-top: 0;
+	background: #c4e17f;
+	border-radius: 5px;
+	background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+	background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+	background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+	background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+}
+.table-responsive {
+	border: 0px solid #dddddd;
+}
+.progress {
+	width: 100%;
+	height: 30px;
+}
+.form_div {
+	position: relative;
+	background-color: #fafafa;
+	/* for demonstration */
+}
+.ajax-loader {
+	position: absolute;
+	left: 50%;
+	top: 40%;
+	margin-left: -32px;
+	/* -1 * image width / 2 */
+	margin-top: -32px;
+	/* -1 * image height / 2 */
+	height: 60px;
+	width: 60px;
+	z-index: 100;
+}
+sub {
+	font-size: 12px;
+}
+#fel_data {
+	font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a:-webkit-any-link {
+	text-decoration: none;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+	font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	border: 1px solid #dad8d6;
+	background: #FFFFFF;
+}
+.ui-widget-content {
+	border: 1px solid #dad8d6;
+	font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.ui-state-focus {
+	background: none !important;
+	background-color: #dd4814 !important;
+	color: #ffffff !important;
+	border: none !important;
+}
+.ui-widget-content a {
+	color: #dd4814;
+}
+.ui-menu .ui-menu-item a {
+	text-decoration: none;
+	display: block;
+	padding: 2px .4em;
+	line-height: 1.5;
+	min-height: 0;
+	/* support: IE7; */
+	font-weight: normal;
+}
+.well {
+	background-color: #ffffff;
+}
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+	font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+}
+.ui-slider .ui-slider-handle {
+	border: 1px solid #6d6963;
+}
+.ui-widget-header {
+	border: 0px solid #aaaaaa;
+	background: #FFFFFF;
+	color: #222222;
+	font-weight: normal;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+	padding: 0px;
+	margin-left: 0px;
+	display: inline;
+	border: 0px;
+	font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+	border: 0px;
+	font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+button.ui-dialog-titlebar-close {
+	z-index: 99999;
+}
+.ui-dialog .ui-dialog-titlebar-close {
+	top: 18px;
+}
